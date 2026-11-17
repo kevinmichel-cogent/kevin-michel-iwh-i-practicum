@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title= title
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="/css/style.css")
+    body
+        h1 Add a new bike
+        a(href="/") Return to the homepage
+        form(action="/update-cobj" method="POST")
+            label(for="name") Name
+            input(type="text" id="name" name="name" required)
+            label(for="brand") Brand
+            input(type="text" id="brand" name="brand")
+            label(for="colour") Colour
+            input(type="text" id="colour" name="colour")
+            button(type="submit") Add bike
